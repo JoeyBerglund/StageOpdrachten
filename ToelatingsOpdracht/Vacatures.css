@@ -1,0 +1,101 @@
+.topLayer {
+  background-image: none;
+  background-color: white;
+  height: 5vh;
+}
+
+header {
+  height: 10vh;
+  background-color: #87afae;
+}
+
+body {
+  background-color: #87afae;
+}
+
+#Title {
+  font-size: 36px;
+  padding: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#alignTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#AlleVacatures {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#Vacature {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  background-color: whitesmoke;
+  height: 25vh;
+  width: 70vh;
+  max-height: 25vh;
+  max-width: 70vh;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#VacatureInfo {
+  padding-top: 1%;
+  margin-left: 10%;
+}
+
+#FunctieNaam {
+  padding-top: 2%;
+  color: #004d4b;
+  font-size: 24px;
+}
+
+#FunctieLocatie {
+  padding-top: 2%;
+  font-size: 16px;
+}
+
+.BekijkFuntie {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 2%;
+  color: white;
+  background-color: #004d4b;
+  width: 15vh;
+  height: 5vh;
+  border-radius: 25px;
+}
+
+.BekijkFuntie:hover {
+  cursor: pointer;
+}
+
+#ABekijkFuntie {
+  background-color: whitesmoke;
+}
+
+/* Remove underlining from the buttons*/
+button.BekijkFuntie:after {
+  background: whitesmoke;
+}
+
+button.BekijkFuntie {
+  background: #004d4b;
+}
+
+#ABekijkFuntie:after {
+  background: whitesmoke;
+}
+
+@media screen and (max-width: 600px) {
+  #Vacature {
+    width: 40vh;
+    height: 17.5vh;
+  }
+}

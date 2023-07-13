@@ -11,10 +11,10 @@
           <a href="index.php" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Blog</a>
+          <a href="OnzeVacatures.php" class="nav-link">Vacatures</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Over ons</a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">Contact</a>

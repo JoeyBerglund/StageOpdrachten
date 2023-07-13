@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -70,12 +68,6 @@ a:after {
   background-color: #004d4b;
 }
 
-.nav-menu {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .nav-item {
   margin-left: 5rem;
 }
@@ -110,7 +102,6 @@ a.nav-link:after {
   transition: width 0.25s ease 0s, right 0.125s ease 0s;
   width: 0;
 }
-/* --- */
 
 .nav-link:hover {
   color: white;
@@ -123,13 +114,17 @@ a.nav-link:after {
   padding: 2%;
 }
 
+/* Geeft styling aan het hamburger menu zelf */
 .nav-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   position: fixed;
   left: -100%;
   top: 5rem;
   flex-direction: column;
   background-color: #004d4b;
-  width: 50%;
+  width: 20%;
   height: 90%;
   border-radius: 10px;
   text-align: center;
@@ -163,9 +158,10 @@ a.nav-link:after {
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-/* --- */
+
+/* Zorgt ervoor dat de achtergrond altijd even hoog is als het beeldscherm van de laptop */
 header {
-  height: 1080px;
+  height: 100vh;
 }
 
 .topLayer {
@@ -178,6 +174,7 @@ header {
   position: relative;
 }
 
+
 .topLayer-text {
   display: flex;
   flex-direction: column;
@@ -189,6 +186,7 @@ header {
   color: white;
 }
 
+
 #BekijkVacatures {
   position: absolute;
   width: 150%;
@@ -199,5 +197,315 @@ header {
   color: white;
   font-size: 250%;
   border: none;
-  
+  cursor: pointer;
+}
+
+#alignText{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media screen and (min-width: 1280px) {
+  .firstTextBlock {
+    background-color: #004d4b;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    max-height: 100%;
+  }
+
+  #WerkTitel {
+    margin-left: 7.5%;
+    padding-top: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  #WerkTekst {
+    max-width: 70vh;
+    margin-left: 10%;
+    color: white;
+    padding: 5%;
+    padding-top: 2.5%;
+    font-size: 20px;
+  }
+
+  #alignText {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #happyIMG {
+    max-height: 450px;
+    margin: 5%;
+    margin-right: 15%;
+  }
+}
+
+@media screen and (max-width: 1289px) {
+  .firstTextBlock {
+    background-color: #004d4b;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 100%;
+    align-items: center;
+  }
+
+  #WerkTitel {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 3.5%;
+    padding-top: 5%;
+  }
+
+  #AlignWerkTitel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #WerkTekst {
+    max-width: 80vh;
+    color: white;
+    padding: 5%;
+    padding-top: 2.5%;
+    font-size: 16px;
+  }
+
+  #alignText {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #happyIMG {
+    max-height: 250px;
+    max-width: 250px;
+    margin-bottom: 3%;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #004d4b;
+    width: 50%;
+    height: 90%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+  }
+}
+
+.secondTextBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 10vh;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif ;
+  text-transform: uppercase;
+}
+
+.first {
+  max-width: 33vh;
+  margin-left: 4%;
+}
+
+.second {
+  max-width: 33vh;
+}
+
+.third {
+  max-width: 33vh;
+}
+
+footer {
+  background-color: #898989;
+  height: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#FooterText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#h1Footer {
+  font-size: 36px;
+}
+
+#pFooter {
+  font-size: 24px;
+}
+
+#JobAlertButton {
+  width: 60vh;
+  height: 10vh;
+  background: rgb(255, 0, 230);
+  color: white;
+  font-size: 250%;
+  border: none;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+#Copyrights {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#CopyrightLeft,
+#CopyrightRight {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 675px) {
+  .secondTextBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 10vh;
+    font-size: 24px;
+  }
+
+  .first {
+    max-width: 33vh;
+    margin-left: 4%;
+  }
+
+  .second {
+    max-width: 33vh;
+  }
+
+  .third {
+    max-width: 33vh;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #004d4b;
+    width: 50%;
+    height: 90%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #LogoDijkEnWaard {
+    max-width: 250px;
+    max-height: 200px;
+  }
+
+  #BekijkVacatures {
+    max-width: 300px;
+    max-height: 250px;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #004d4b;
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+  }
+
+  #JobAlertButton {
+    max-width: 30vh;
+    max-height: 10vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #FooterText {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #pFooter {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #Copyrights {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 674px) and (min-width: 486px) {
+  #JobAlertButton {
+    max-width: 30vh;
+    max-height: 10vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #BekijkVacatures {
+    max-width: 300px;
+    max-height: 250px;
+  }
+
+  #Copyrights {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #JobAlertButton {
+    max-width: 20vh;
+    max-height: 5vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #BekijkVacatures {
+    max-width: 100px;
+    max-height: 100%;
+  }
+
+  #happyIMG {
+    max-width: 100vh;
+    max-height: 10vh;
+  }
 }
